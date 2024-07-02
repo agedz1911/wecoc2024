@@ -234,10 +234,13 @@
         </div>
 
     </div>
-    <div class="pt-28 pb-52 lg:px-20 px-5 min-h-screen bg-slate-200" id="submission">
+    <div class="pt-28 pb-52 lg:px-20 px-5 h-screen bg-slate-50" id="submission">
         <div class="flex-col flex gap-3 mb-10">
             <h4 class="text-2xl text-primary-600 font-semibold">Abstract Submission</h4>
             <h1 class="text-4xl text-primary-700 font-semibold"> Submission</h1>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full">
+            <h1 class="text-4xl text-gray-400">Coming soon, stay tuned!</h1>
         </div>
     </div>
 </div>

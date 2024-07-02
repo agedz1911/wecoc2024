@@ -1,7 +1,9 @@
 <?php
 
 use App\Livewire\HomePage;
+use App\Livewire\Pages\CardiologyInJeopardy;
 use App\Livewire\Pages\CongressInformation;
+use App\Livewire\Pages\Homecoming;
 use App\Livewire\Pages\Registration;
 use App\Livewire\Pages\ScientificProgram;
 use App\Livewire\Pages\Submission;
@@ -38,3 +40,5 @@ Route::prefix('/submission')->group(function () {
 
 Route::get('/registration', Registration::class);
 
+Route::get('/cardiology-in-jeopardy', CardiologyInJeopardy::class);
+Route::get('/homecoming', Homecoming::class);

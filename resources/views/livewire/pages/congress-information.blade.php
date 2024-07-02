@@ -24,8 +24,8 @@
                     </div>
                 </div>
                 <div class="lg:mt-10 mt-5 flex items-center gap-4">
-                    <button class="btn btn-lg bg-primary-800 hover:bg-primary-600 border-none text-white ">Register
-                        Now</button>
+                    <a href="/registration" class="btn btn-lg bg-primary-800 hover:bg-primary-600 border-none text-white ">Register
+                        Now</a>
                     <button class="btn btn-outline-primary btn-lg">Read More</button>
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-4  w-full gap-2  mt-5 md:mt-8" id="countdown">
@@ -106,11 +106,12 @@
         <livewire:resources.committee />
     </div>
 
-    <div class="bg-local pt-24 pb-52 lg:px-20 px-5 bg-doctor bg-primary-50" id="faculties">
+    <div class="bg-local pt-24 pb-52 lg:px-20 px-5 bg-doctor bg-primary-50 h-screen" id="faculties">
         <div class="flex-col flex gap-3 mb-16">
             <h4 class="text-2xl text-primary-600 font-semibold">Congress Information</h4>
             <h1 class="text-4xl text-primary-700 font-semibold">Faculties</h1>
         </div>
+        
         <livewire:resources.faculty />
     </div>
 

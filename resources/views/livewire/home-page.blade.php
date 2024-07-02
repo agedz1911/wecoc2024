@@ -67,9 +67,9 @@
                         October 25<sup>th</sup> - 26<sup>th</sup>, 2024 <br>
                         JW Marriot Hotel, Jakarta, Indonesia
                     </p>
-                    <button class="btn text-primary-500 border-none mt-8">Register
-                        Now</button>
-                    <button class="btn btn-outline text-white hover:bg-primary-500 hover:border-none">Read More</button>
+                    <a href="/registration"> <button  class="btn text-primary-500 border-none mt-8">Register
+                        Now</button></a>
+                    <a href="/congress-information"> <button class="btn btn-outline text-white hover:bg-primary-500 hover:border-none">Read More</button></a>
                 </div>
             </div>
             <div class="hidden lg:flex">
@@ -137,8 +137,8 @@
                 </div>
 
                 <div class="lg:mt-10 mt-5 flex items-center gap-4">
-                    <button class="btn w-1/3 bg-primary-800 hover:bg-primary-600 border-none text-white ">Register
-                        Now</button>
+                     <a href="/registration" class="btn w-1/3 bg-primary-800 hover:bg-primary-600 border-none text-white ">Register
+                        Now</a>
                     <button class="btn w-1/3 btn-outline-primary ">Read More</button>
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-4  w-full gap-2  mt-5 md:mt-8" id="countdown">
@@ -291,7 +291,7 @@
                     <div class="flex items-center gap-3">
                         <i class="fa-regular fa-envelope text-6xl text-white"></i>
                         <h2 class="card-title text-xl md:text-4xl text-white">Subscribe for
-                            the Latest updates</h2>
+                            the latest updates</h2>
                     </div>
                     <form class="flex flex-col lg:flex-row gap-4 lg:w-1/2 w-full">
 

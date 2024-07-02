@@ -5,14 +5,14 @@
             <div class="">
                 <div class="mb-4 flex space-x-4 p-2 bg-white rounded-lg shadow-md">
                     <button x-on:click="openTab = 1" :class="{ 'bg-primary-600 text-white': openTab === 1 }"
-                        class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">26
+                        class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">25
                         October</button>
                     <button x-on:click="openTab = 2" :class="{ 'bg-primary-600 text-white': openTab === 2 }"
-                        class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">27
+                        class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">26
                         October</button>
-                    <button x-on:click="openTab = 3" :class="{ 'bg-primary-600 text-white': openTab === 3 }"
+                    {{-- <button x-on:click="openTab = 3" :class="{ 'bg-primary-600 text-white': openTab === 3 }"
                         class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">28
-                        October</button>
+                        October</button> --}}
                 </div>
 
                 <div x-show="openTab === 1"
