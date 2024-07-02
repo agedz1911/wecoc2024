@@ -6,7 +6,7 @@
         </div>
 
         <div class="container mx-auto items-center">
-            <livewire:resources.atglance />
+            <livewire:resources.at-glance />
             
         </div>
     </div>
