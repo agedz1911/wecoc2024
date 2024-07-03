@@ -26,19 +26,18 @@
             <nav class="flex-col flex gap-5 text-white">
                 <h1 class="font-bold text-slate-300 text-2xl">Useful Links</h1>
                 <a href="/scientific-program" class="link link-hover">Scientific Program</a>
-                <a href="/congress-information" class="link link-hover">Congress information</a>
-                <a href="/submission" class="link link-hover">Submission</a>
+                <a href="/congress-information" class="link link-hover">Congress Information</a>
+                <a href="/submission" class="link link-hover">Abstract Submission</a>
                 <a href="/registration" class="link link-hover">Registration</a>
                 <a href="/cardiology-in-jeopardy" class="link link-hover">Cardiology in Jeopardy</a>
                 <a href="/homecoming" class="link link-hover">Homecoming</a>
             </nav>
             <nav class="flex-col flex gap-2 text-white">
                 <h1 class="font-semibold text-2xl text-slate-300">Get in touch with us</h1>
-                <div class="grid grid-flow-col gap-2">
+                <div class="flex flex-row gap-2">
                     <a href="mailto:wecoc.eventkardiologi@gmail.com" data-tip="wecoc.eventkardiologi@gmail.com" class="btn btn-outline btn-lg tooltip tooltip-bottom py-4 btn-ghost btn-circle"><i class="fa-solid fa-envelope text-slate-300 text-xl"></i></a>
                     <a href="https://www.instagram.com/wecoc_ykvi/?igsh=MXYzeHQxYThlbDFqcQ%3D%3D" data-tip="@wecoc_ykvi" class="btn btn-outline btn-lg tooltip tooltip-bottom py-4 btn-ghost btn-circle"><i class="fa-brands fa-instagram text-rose-500 text-xl"></i></a>
-                    <a class="btn btn-outline btn-lg  py-4 btn-ghost btn-circle"><i class="fa-brands fa-facebook text-sky-500 text-xl"></i></a>
-                    <a class="btn btn-outline btn-lg   py-4 btn-ghost btn-circle"><i class="fa-brands fa-square-x-twitter text-slate-200 text-xl"></i></a>
+                    
                 </div>
             </nav>
         </div>

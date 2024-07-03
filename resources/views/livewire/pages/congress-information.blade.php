@@ -88,7 +88,7 @@
             <p class="text-justify">Feel free to explore the WECOC website for further details and updates. If you have any specific questions, don't hesitate to ask!</p>
             <p class="text-justify">Welcome to the full offline conference of the 36th WECOC 2024.</p>
             <p class="text-justify">Warm regards,</p>
-            <img class="float-left rounded-lg ring ring-primary ring-offset-base-100 ring-offset-4 w-40 m-3" src="images/chairman.png">
+            <img class="float-left rounded-lg ring ring-primary ring-offset-base-100 ring-offset-4 w-40 m-3" src="images/chairman-new.png">
             <div class="">
                 <p class="font-semibold underline">Sony Hilal Wicaksono, MD</p>
                 <p class="text-xs font-semibold">Congress Chairperson, <br>

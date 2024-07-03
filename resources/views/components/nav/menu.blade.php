@@ -48,10 +48,16 @@
                 </a>
                 <ul class="sub-menu" id="submenu-2">
                   <li class="sub-menu--item">
-                    <a href="/scientific-program#at-glance">Program at Glance</a>
+                    <a href="/scientific-program#at-glance">Program At A Glance</a>
                   </li>
                   <li class="sub-menu--item">
-                    <a href="/scientific-program#schedule">Scientific Schedule</a>
+                    <a href="/scientific-program#schedule-sympo">Symposium Schedule</a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="/scientific-program#schedule-ws">Workshop Schedule</a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="/scientific-program#scientific-corner">Scientific Corner</a>
                   </li>
                 </ul>
               </li>

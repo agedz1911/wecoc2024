@@ -176,7 +176,7 @@
         <div class="card card-side bg-base-100 shadow-xl">
             <div class="flex flex-col md:flex-row justify-between items-start">
                 <figure>
-                    <img class="bg-[#32bea6] rounded-lg ring ring-primary ring-offset-base-100 ring-offset-4" src="images/chairman.png">
+                    <img class="bg-[#32bea6] rounded-lg ring ring-primary ring-offset-base-100 ring-offset-4" src="images/chairman-new.png">
                     
                 </figure>
                 <div class="card-body">

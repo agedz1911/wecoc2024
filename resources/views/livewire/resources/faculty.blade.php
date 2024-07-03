@@ -32,7 +32,7 @@
         </div>
     @else
         <div class="flex flex-col items-center justify-center h-full">
-            <h1 class="text-4xl text-gray-400">Coming soon, stay tuned!</h1>
+            <h1 class="text-4xl text-gray-400">Coming soon</h1>
         </div>
     @endif
 
