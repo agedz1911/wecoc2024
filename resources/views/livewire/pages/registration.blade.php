@@ -4,7 +4,12 @@
             <h4 class="text-2xl text-primary-600 font-semibold">Registration</h4>
             <h1 class="text-4xl text-primary-700 font-semibold">Registration Fee</h1>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7 lg:gap-10">
+        <div class="h-96">
+            <div class="flex flex-col items-center justify-center h-full">
+                <h1 class="text-4xl text-gray-400">Coming soon</h1>
+            </div>
+        </div>
+        {{-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7 lg:gap-10">
             <div class="card bg-price shadow-xl">
                 <div class="card-body w-full">
                     <h2 class="card-title text-primary-500 text-4xl">Specialist</h2>
@@ -40,8 +45,7 @@
                 </div>
             </div>
             <div class="card bg-price shadow-xl">
-                {{-- <figure class="relative"><img src="images/pricing_bg.jpg" alt="" />
-                </figure> --}}
+               
                 <div class="card-body w-full">
                     <h2 class="card-title text-primary-500 text-4xl">General
                         Practitioners</h2>
@@ -78,8 +82,7 @@
                 </div>
             </div>
             <div class="card bg-price shadow-xl">
-                {{-- <figure class="relative"><img src="images/pricing_bg.jpg" alt="" />
-                </figure> --}}
+                
                 <div class="card-body w-full">
                     <h2 class="card-title text-primary-500 text-4xl">Nurse/
                         Technician
@@ -118,8 +121,7 @@
                 </div>
             </div>
             <div class="card bg-price shadow-xl">
-                {{-- <figure class="relative"><img src="images/pricing_bg.jpg" alt="" />
-                </figure> --}}
+                
                 <div class="card-body w-full">
                     <h2 class="card-title text-primary-500 text-4xl">Student</h2>
                     <div class="border my-5 border-primary-600"></div>
@@ -155,7 +157,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 
     <div class="bg-local pt-24 pb-52 lg:px-20 px-5 bg-blog" id="reg-info">

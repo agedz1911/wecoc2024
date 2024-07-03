@@ -4,7 +4,13 @@
             <h4 class="text-2xl text-primary-600 font-semibold">Abstract Submission</h4>
             <h1 class="text-4xl text-primary-700 font-semibold">Guideline for Abstracts</h1>
         </div>
-        <div class="bg-white border border-gray-200 divide-y divide-gray-200 rounded-lg">
+        <div class="h-96">
+
+            <div class="flex flex-col items-center justify-center h-full">
+                <h1 class="text-4xl text-gray-400">Coming soon</h1>
+            </div>
+        </div>
+        {{-- <div class="bg-white border border-gray-200 divide-y divide-gray-200 rounded-lg">
             <details class="p-6 group" open>
                 <summary class="flex items-center justify-between cursor-pointer">
                     <h5 class="text-xl font-semibold text-primary-900">
@@ -231,7 +237,7 @@
                     <li>The decision of the committee is final and cannot be contested</li>
                 </ul>
             </details>
-        </div>
+        </div> --}}
 
     </div>
     <div class="pt-28 pb-52 lg:px-20 px-5 h-screen bg-slate-50" id="submission">
