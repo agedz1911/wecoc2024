@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-local pt-28 pb-52 lg:px-20 px-5 bg-doctor bg-primary-50" id="scientific-corner">
+    <div class=" pt-28 pb-52 lg:px-20 px-5 b" id="scientific-corner">
         <div class="flex-col flex gap-3 mb-16">
             <h4 class="text-2xl text-primary-600 font-semibold">Scientific Program</h4>
             <h1 class="text-4xl text-primary-700 font-semibold">Scientific Corner</h1>
