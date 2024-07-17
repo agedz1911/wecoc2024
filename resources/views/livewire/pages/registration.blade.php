@@ -32,7 +32,8 @@
                         <p>Rp. 2.000.000</p>
                     </div>
                     <div class="card-actions justify-end">
-                        <a href="https://expo.virconex-id.com/registration/wecoc2024/" class="btn btn-primary">Register </a>
+                        {{-- <a href="https://expo.virconex-id.com/registration/wecoc2024/" class="btn btn-primary">Register </a> --}}
+                        <a href="javascript:void(0)" class="btn btn-primary">Register </a>
                     </div>
                 </div>
             </div>
@@ -66,7 +67,7 @@
                         <p>Rp. 1.500.000</p>
                     </div>
                     <div class="card-actions justify-end">
-                        <a href="https://expo.virconex-id.com/registration/wecoc2024/" class="btn btn-primary">Register </a>
+                        <a href="javascript:void(0)" class="btn btn-primary">Register </a>
                     </div>
                 </div>
             </div>
@@ -102,7 +103,7 @@
 
                     </div>
                     <div class="card-actions justify-end">
-                        <a href="https://expo.virconex-id.com/registration/wecoc2024/" class="btn btn-primary">Register </a>
+                        <a href="javascript:void(0)" class="btn btn-primary">Register </a>
                     </div>
                 </div>
             </div>
@@ -136,7 +137,7 @@
 
                     </div>
                     <div class="card-actions justify-end">
-                        <a href="https://expo.virconex-id.com/registration/wecoc2024/" class="btn btn-primary">Register </a>
+                        <a href="javascript:void(0)" class="btn btn-primary">Register </a>
                     </div>
                 </div>
             </div>
