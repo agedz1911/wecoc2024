@@ -32,8 +32,7 @@
                         <p>Rp. 2.000.000</p>
                     </div>
                     <div class="card-actions justify-end">
-                        {{-- <a href="https://expo.virconex-id.com/registration/wecoc2024/" class="btn btn-primary">Register </a> --}}
-                        <a href="javascript:void(0)" class="btn btn-primary">Register </a>
+                        <a href="https://expo.virconex-id.com/registration/wecoc2024/" class="btn btn-primary">Register </a>
                     </div>
                 </div>
             </div>
@@ -67,7 +66,7 @@
                         <p>Rp. 1.500.000</p>
                     </div>
                     <div class="card-actions justify-end">
-                        <a href="javascript:void(0)" class="btn btn-primary">Register </a>
+                        <a href="https://expo.virconex-id.com/registration/wecoc2024/" class="btn btn-primary">Register </a>
                     </div>
                 </div>
             </div>
@@ -103,7 +102,7 @@
 
                     </div>
                     <div class="card-actions justify-end">
-                        <a href="javascript:void(0)" class="btn btn-primary">Register </a>
+                        <a href="https://expo.virconex-id.com/registration/wecoc2024/" class="btn btn-primary">Register </a>
                     </div>
                 </div>
             </div>
@@ -137,7 +136,7 @@
 
                     </div>
                     <div class="card-actions justify-end">
-                        <a href="javascript:void(0)" class="btn btn-primary">Register </a>
+                        <a href="https://expo.virconex-id.com/registration/wecoc2024/" class="btn btn-primary">Register </a>
                     </div>
                 </div>
             </div>
@@ -151,68 +150,6 @@
         </div>
 
         <livewire:resources.reg-info />
-        <!-- <div class="bg-white border border-gray-200 divide-y divide-gray-200 rounded-lg">
-            <details class="p-6 group" open>
-                <summary class="flex items-center justify-between cursor-pointer">
-                    <h5 class="text-xl font-semibold text-primary-900">
-                        Entitlements
-                    </h5>
-                    <span class="relative flex-shrink-0 ml-1.5 w-5 h-5">
-                        <i class="fa-solid fa-eye absolute inset-0 w-5 h-5 opacity-0 group-open:opacity-100"></i>
-                        <i class="fa-solid fa-eye-slash absolute inset-0 w-5 h-5 opacity-100 group-open:opacity-0"></i>
-                    </span>
-                </summary>
-
-                <p class="mt-4 leading-relaxed text-slate-500">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                    molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                    voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                    earum similique!
-                </p>
-            </details>
-
-            <details class="p-6 group">
-                <summary class="flex items-center justify-between cursor-pointer">
-                    <h5 class="text-xl font-semibold text-primary-900">
-                        Registration Fee
-                    </h5>
-
-                    <span class="relative flex-shrink-0 ml-1.5 w-5 h-5">
-                        <i class="fa-solid fa-eye absolute inset-0 w-5 h-5 opacity-0 group-open:opacity-100"></i>
-                        <i class="fa-solid fa-eye-slash absolute inset-0 w-5 h-5 opacity-100 group-open:opacity-0"></i>
-                    </span>
-                </summary>
-
-                <p class="mt-4 leading-relaxed text-slate-500">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                    molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                    voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                    earum similique!
-                </p>
-            </details>
-
-            <details class="p-6 group">
-                <summary class="flex items-center justify-between cursor-pointer">
-                    <h5 class="text-xl font-semibold text-primary-900">
-                        Cancellation Policy of Registration
-                    </h5>
-
-                    <span class="relative flex-shrink-0 ml-1.5 w-5 h-5">
-                        <i class="fa-solid fa-eye absolute inset-0 w-5 h-5 opacity-0 group-open:opacity-100"></i>
-                        <i class="fa-solid fa-eye-slash absolute inset-0 w-5 h-5 opacity-100 group-open:opacity-0"></i>
-                    </span>
-                </summary>
-
-                <p class="mt-4 leading-relaxed text-slate-500">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                    molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                    voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                    earum similique!
-                </p>
-            </details>
-        </div> -->
 
     </div>
-
-
 </div>
