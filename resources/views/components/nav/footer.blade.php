@@ -36,7 +36,7 @@
                 <h1 class="font-semibold text-2xl text-slate-300">Get in touch with us</h1>
                 <div class="flex flex-row gap-2">
                     <a href="mailto:wecoc.eventkardiologi@gmail.com" data-tip="wecoc.eventkardiologi@gmail.com" class="btn btn-outline btn-lg tooltip tooltip-bottom py-4 btn-ghost btn-circle"><i class="fa-solid fa-envelope text-slate-300 text-xl"></i></a>
-                    <a href="https://www.instagram.com/ykvi.wecoc/" data-tip="@wecoc_ykvi" class="btn btn-outline btn-lg tooltip tooltip-bottom py-4 btn-ghost btn-circle"><i class="fa-brands fa-instagram text-rose-500 text-xl"></i></a>
+                    <a href="https://www.instagram.com/ykvi.wecoc/" data-tip="@ykvi.wecoc" class="btn btn-outline btn-lg tooltip tooltip-bottom py-4 btn-ghost btn-circle"><i class="fa-brands fa-instagram text-rose-500 text-xl"></i></a>
                     
                 </div>
             </nav>

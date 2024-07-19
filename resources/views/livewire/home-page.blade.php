@@ -346,13 +346,11 @@
     </div>
 
     <dialog id="my_modal_1" class="modal" x-data="{}" x-init="$el.showModal()">
-        <div class="modal-box bg-transparent w-11/12 max-w-2xl">
-            <form method="dialog">
-                <button class="btn btn-ghost float-end"><i class="fa-solid fa-xmark text-white"></i></button>
-            </form>
+        <div class="modal-box bg-transparent w-11/12 max-w-lg">
+            
             <img src="images/HAEdited.jpg" class="w-full rounded-lg" alt="">
             <form method="dialog">
-                <button class="btn float-end btn-sm bg-primary-700 hover:bg-primary-500 text-white border-none mt-2">Close</button>
+                <button class="btn float-end btn-sm bg-primary-700 hover:bg-primary-500 text-white mt-2">Close</button>
             </form>
         </div>
     </dialog>
