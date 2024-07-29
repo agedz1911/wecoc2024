@@ -1061,6 +1061,12 @@ li.sub-menu--item.nav-item-has-children .dropdown-icon {
     background-repeat: no-repeat;
     background-position: center;
 }
+.bg-cij {
+    background-image: url(/images/bg-cij.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+}
 
 .bg-basic {
     background-image: url(/images/appointment_bg.jpg);
