@@ -239,7 +239,7 @@
                         <div class="card bg-price ">
                             <div class="card-body w-full">
                                 <div>
-                                    <h2 class="card-title text-primary-500">Imaging --> Cardiovascular CT in Acute Chest Pain Settings</h2>
+                                    <h2 class="card-title text-primary-500">Imaging: Cardiovascular CT in Acute Chest Pain Settings</h2>
                                     <div class="badge">WS 7</div>
                                 </div>
                                 <div class="border my-2 border-primary-600"></div>
@@ -265,7 +265,7 @@
                         <div class="card bg-price ">
                             <div class="card-body w-full">
                                 <div>
-                                    <h2 class="card-title text-primary-500">Vascular --> Mastering Non-invasive Diagnostic Vascular: Duplex-Doppler Ultrasound and Plethysmography in Carotid, Renal, Upper-Lower Extremity, and AV Shunt Haemodialysis Access</h2>
+                                    <h2 class="card-title text-primary-500">Vascular: Mastering Non-invasive Diagnostic Vascular: Duplex-Doppler Ultrasound and Plethysmography in Carotid, Renal, Upper-Lower Extremity, and AV Shunt Haemodialysis Access</h2>
                                     <div class="badge">WS 9</div>
                                 </div>
                                 <div class="border my-2 border-primary-600"></div>

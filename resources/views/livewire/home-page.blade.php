@@ -231,8 +231,7 @@
                                 <ul class="list-disc list-inside">
                                     <li>All abstracts must be written in the English Language.</li>
                                     <li>The 36<sup>th</sup> WECOC 2024 welcomes abstracts in all areas applied with 3
-                                        categories: <span class="text-primary-600"> original research,
-                                            meta-analysis/systematic review, and case report/series...</span></li>
+                                        categories: <span class="text-primary-600"> original research, meta-analysis/systematic review, and case report/series...</span></li>
                                 </ul>
                                 <div class="text-end mt-8 gap-3">
                                     <a href="/submission#guideline-abstract"
