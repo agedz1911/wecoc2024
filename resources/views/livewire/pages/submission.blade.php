@@ -29,8 +29,7 @@
                 </summary>
                 <ul class="mt-4 leading-relaxed text-slate-500 list-disc px-10">
                     <li>All abstracts must be written in the English Language.</li>
-                    <li>The 36th WECOC 2024 welcomes abstracts in all areas applied with 3 categories: <span
-                            class="text-primary-600 font-semibold"> original research, meta-analysis/systematic review, and case report/series </span></li>
+                    <li>The 36th WECOC 2024 welcomes abstracts in all areas applied with 3 categories: <span class="text-primary-600 font-semibold"> original research, meta-analysis/systematic review, and case report/series </span></li>
                     <li>Abstracts of literature review and evidence-based case report (EBCR) are not accepted.</li>
                     <li><span class="text-primary-600 font-semibold"> The submitted abstract must fall into one of these categories:</span>
                         <ul class="list-item mx-3">
@@ -78,7 +77,7 @@
                             <li>Articles should use justify as the paragraph style (align left and right), be typed 1.5-spaced, and leave a 2.5-cm margin on all sides</li>
                             <li>The title and subtitle should be in bold.</li>
                             <li>The abstracts are not required to mention the authors’ names and affiliations</li>
-                            
+
                             <li>The abstracts should not be exceeded 300 words (excluding the title, authors, and affiliations)</li>
                             <li>A maximum of 1 figure OR table is allowed to be included in the articles (in the form of PNG, JPEG, or JPG).</li>
                             <li>The abstracts of the original article should be presented in structured abstract as below:
@@ -214,20 +213,40 @@
             </details>
         </div>
         <div class="text-end mt-8 gap-3">
-            <a href="javascript:void(0)"
-                class="btn bg-primary-700 hover:bg-primary-500 border-none  text-white"><i
-                class="fa-solid fa-file-export"></i> Submit Now</a>
-            <a href="/download/guideline-abstract.pdf" target="_blank" class="btn btn-outline  btn-primary"><i
-                    class="fa-solid fa-file-arrow-down"></i> Download Guideline</a>
+            <button onclick="my_modal_1.showModal()" class="btn bg-primary-700 hover:bg-primary-500 border-none  text-white"><i class="fa-solid fa-file-export"></i> Submit Now</button>
+            <a href="/download/guideline-abstract.pdf" target="_blank" class="btn btn-outline  btn-primary"><i class="fa-solid fa-file-arrow-down"></i> Download Guideline</a>
         </div>
     </div>
-    <div class="pt-28 pb-52 lg:px-20 px-5 h-screen bg-slate-50" id="submission">
+    <div class="pt-28 pb-52 lg:px-20 px-5 bg-slate-50" id="submission">
         <div class="flex-col flex gap-3 mb-10">
             <h4 class="text-2xl text-primary-600 font-semibold">Abstract Submission</h4>
             <h1 class="text-4xl text-primary-700 font-semibold"> Submission</h1>
         </div>
         <div class="flex flex-col items-center justify-center h-full">
-            <h1 class="text-4xl text-gray-400">Coming soon</h1>
+            <div class="card bg-price w-full max-w-xl">
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-primary-600 font-bold">Online Submission</h2>
+                    <div class="divider"></div>
+                    <div class="w-full">
+                        <button onclick="my_modal_1.showModal()" class="btn btn-block bg-primary-700 hover:bg-primary-500 border-none  text-white">
+                            <i class="fa-solid fa-file-export"></i> Submit Now
+                        </button>
+                        <small class="italic text-primary-400">*make sure the file conforms to the guidelines.</small>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box w-11/12 max-w-6xl">
+            <embed class="w-full h-screen" src="https://expo.virconex-id.com/abstract/wecoc2024/" type="text/html">
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
 </div>
