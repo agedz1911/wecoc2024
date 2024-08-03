@@ -211,8 +211,7 @@
         <div class="w-full mt-20 lg:mt-36">
             <div class="border rounded-lg shadow-md px-5 pb-10">
                 <div class="flex flex-col items-center relative">
-                    <div
-                        class="flex shadow-md items-center gap-3 py-3 px-5 flex-row absolute rounded-full -top-9 bg-primary-500">
+                    <div class="flex shadow-md items-center gap-3 py-3 px-5 flex-row absolute rounded-full -top-9 bg-primary-500">
                         <div class="avatar">
                             <div class="w-12 bg-white rounded-full">
                                 <i class="fa-solid fa-bell text-primary-500 text-3xl py-2 px-3"></i>
@@ -224,7 +223,7 @@
                         <p class="text-xl font-semibold">Deadline of Abstract Submission:</p>
                         <p class="text-lg font-semibold">Saturday, August 31, 2024, 23.59 WIB</p>
 
-                        <div class="flex flex-col lg:flex-row mt-8 justify-start gap-5">
+                        <div class="flex flex-col lg:flex-row mt-8 justify-between gap-5 ">
                             <div class="text-start flex-initial w-full lg:w-1/2">
                                 <h1 class="text-lg text-primary-700 font-medium">Guideline for Abstract</h1>
                                 <p class="font-semibold mt-2">General Information</p>
@@ -232,21 +231,39 @@
                                     <li>All abstracts must be written in the English Language.</li>
                                     <li>The 36<sup>th</sup> WECOC 2024 welcomes abstracts in all areas applied with 3
                                         categories: <span class="text-primary-600"> original research, meta-analysis/systematic review, and case report/series...</span></li>
+                                    <li>Abstracts of literature review and evidence-based case report (EBCR) are not accepted.</li>
+                                    <li><span class="text-primary-600 font-semibold"> The submitted abstract must fall into one of these categories:</span>
+                                        <ul class="list-item mx-3">
+                                            <li>a. Arrhythmia/Electrophysiology</li>
+                                            <li>b. Cardiac Prevention/Rehabilitation</li>
+                                            <li>c. ACS/Acute Cardiac Care</li>
+                                            <li>d. Echo/Imaging</li>
+                                            <li>e. Heart Failure/Pulmonary Hypertension</li>
+                                            <li>f. Vascular</li>
+                                            <li>g. Congenital Heart Disease</li>
+                                            <li>h. Hypertension, Diabetes, Metabolic Syndrome, etc</li>
+                                            <li>i. Interventional Cardiology</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                                 <div class="text-end mt-8 gap-3">
-                                    <a href="/submission#guideline-abstract"
-                                        class="btn bg-primary-700 hover:bg-primary-500 border-none  text-white"><i
-                                            class="fa-solid fa-circle-info"></i> Read More</a>
-                                    <a href="/download/guideline-abstract.pdf" target="_blank"
-                                        class="btn btn-outline  btn-primary"><i
-                                            class="fa-solid fa-file-arrow-down"></i> Download Guideline</a>
+                                    <a href="/submission#guideline-abstract" class="btn bg-primary-700 hover:bg-primary-500 border-none  text-white"><i class="fa-solid fa-circle-info"></i> Read More</a>
+                                    <a href="/download/guideline-abstract.pdf" target="_blank" class="btn btn-outline  btn-primary"><i class="fa-solid fa-file-arrow-down"></i> Download Guideline</a>
                                 </div>
                             </div>
                             <div class="text-start flex-none">
-                                <h1 class="text-lg text-primary-700 font-medium">Submission Abstract</h1>
-                                <a href="javascript:void(0)"
-                                    class="btn w-full bg-primary-700 border-none hover:bg-primary-500 text-white"><i
-                                        class="fa-solid fa-file-export"></i> Submit</a>
+                                <div class="w-full max-w-2xl">
+                                    <div class="mockup-window border">
+                                        <div class="flex justify-center px-4 py-5 bg-slate-100">
+                                            <video class=" rounded-lg" controls muted autoplay loop>
+                                                <source src="images/video/submit-abstract.mp4" type="video/mp4" />
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h1 class="text-lg text-primary-700 font-medium mt-5">Submission Abstract</h1>
+                                <a href="javascript:void(0)" class="btn w-full bg-primary-700 border-none hover:bg-primary-500 text-white"><i class="fa-solid fa-file-export"></i> Submit</a>
                             </div>
                         </div>
                     </div>
