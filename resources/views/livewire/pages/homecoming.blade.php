@@ -46,6 +46,7 @@
                         <div class="card bg-sky-700 bg-opacity-20">
                             <div class="card-body">
                                 <div class="flex flex-col gap-3 text-lg lg:text-2xl">
+                                    <h4 class="text-center font-bold uppercase">Year of entry</h4>
                                     <div class="flex flex-row items-center gap-5 text-white font-semibold uppercase">
                                         <i class="fa-solid fa-shirt "></i>
                                         <p>1968 - 1992: white</p>
@@ -60,11 +61,11 @@
                                     </div>
                                     <div class="flex flex-row items-center gap-5 text-blue-600 font-semibold uppercase">
                                         <i class="fa-solid fa-shirt"></i>
-                                        <p>2018 - now: blue</p>
+                                        <p>2018 - now <span class="text-base">(Including PPDS)</span>: blue</p>
                                     </div>
                                     <div class="flex flex-row items-center gap-5 text-yellow-300 font-semibold uppercase">
                                         <i class="fa-solid fa-shirt"></i>
-                                        <p>PPDS : yellow</p>
+                                        <p>Committee : yellow</p>
                                     </div>
                                 </div>
                             </div>
