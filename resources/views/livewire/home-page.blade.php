@@ -343,10 +343,10 @@
                 </div>
                 <div class="flex-col">
                     <div class="text-5xl font-bold flex flex-row">
-                        <h1 x-data="animatedCounter(50, 200)" x-init="updatecounter" x-text="Math.round(current)"></h1>
+                        <h1 x-data="animatedCounter(1, 200)" x-init="updatecounter" x-text="Math.round(current)"></h1>
                         <h1 class="text-5xl font-bold">+</h1>
                     </div>
-                    <h1 class="text-4xl font-semibold text-slate-50">Topics</h1>
+                    <h1 class="text-4xl font-semibold text-slate-50">Plenary Lecture</h1>
                 </div>
             </div>
             <div class="flex items-center gap-5">
@@ -359,8 +359,8 @@
                 </div>
                 <div class="flex-col">
                     <div class="text-5xl font-bold flex flex-row">
-                        <h1 x-data="animatedCounter(4, 200)" x-init="updatecounter" x-text="Math.round(current)"></h1>
-                        <h1 class="text-5xl font-bold">+</h1>
+                        <h1 x-data="animatedCounter(9, 200)" x-init="updatecounter" x-text="Math.round(current)"></h1>
+                        <h1 class="text-5xl font-bold"></h1>
                     </div>
                     <h1 class="text-4xl font-semibold text-slate-50">Workshops</h1>
                 </div>
@@ -375,7 +375,7 @@
                 </div>
                 <div class="flex-col">
                     <div class="text-5xl font-bold flex flex-row">
-                        <h1 x-data="animatedCounter(40, 200)" x-init="updatecounter" x-text="Math.round(current)"></h1>
+                        <h1 x-data="animatedCounter(20, 200)" x-init="updatecounter" x-text="Math.round(current)"></h1>
                         <h1 class="text-5xl font-bold">+</h1>
                     </div>
                     <h1 class="text-4xl font-semibold text-slate-50">Symposiums</h1>
