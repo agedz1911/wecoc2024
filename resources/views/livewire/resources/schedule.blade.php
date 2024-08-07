@@ -17,8 +17,10 @@
 
                     <div x-show="openTab === 1"
                         class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-primary">
-                        @foreach ($sesis->where('date', '2024-10-26') as $sesi)
+                        @foreach ($sesis->where('date', '2024-10-25') as $sesi)
                             <div class="overflow-x-auto">
+                                
+
                                 <table class="table">
                                     <thead>
                                         <tr class="text-base font-semibold mb-2 text-primary-800 ">
@@ -56,7 +58,7 @@
 
                     <div x-show="openTab === 2"
                         class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-primary">
-                        @foreach ($sesis->where('date', '2024-10-27') as $sesi)
+                        @foreach ($sesis->where('date', '2024-10-26') as $sesi)
                             <div class="overflow-x-auto">
                                 <table class="table">
                                     <thead>

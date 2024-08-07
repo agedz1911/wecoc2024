@@ -63,6 +63,7 @@
                                         <i class="fa-solid fa-shirt"></i>
                                         <p>2018 - now <span class="text-base">(Including PPDS)</span>: blue</p>
                                     </div>
+                                    <a href="" target="_blank"></a>
                                     <div class="flex flex-row items-center gap-5 text-yellow-300 font-semibold uppercase">
                                         <i class="fa-solid fa-shirt"></i>
                                         <p>Committee : yellow</p>
