@@ -4,7 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\FacultyResource\Pages;
 use App\Filament\Resources\FacultyResource\RelationManagers;
-use App\Models\Faculty;
+use App\Models\faculty;
 use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Select;
@@ -25,7 +25,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class FacultyResource extends Resource
 {
-    protected static ?string $model = Faculty::class;
+    protected static ?string $model = faculty::class;
     // protected static ?string $modelLabel = 'Type';
     protected static ?string $navigationGroup = 'Front End Components';
 
