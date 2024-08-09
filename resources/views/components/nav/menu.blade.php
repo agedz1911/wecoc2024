@@ -89,6 +89,11 @@
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
               </li>
+              <li class="nav-item {{ request()->is('accommodation*') ? 'text-primary-500' : '' }}">
+                <a href="accommodation" class="nav-link-item hover:text-primary-500">Accommodation
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+              </li>
               
             </ul>
           </nav>

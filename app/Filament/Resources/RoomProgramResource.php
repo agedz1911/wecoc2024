@@ -39,7 +39,9 @@ class RoomProgramResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('name'),
-                IconColumn::make('is_active')->boolean()
+                IconColumn::make('is_active')->boolean(),
+                TextColumn::make('atglance'),
+                TextColumn::make('session'),
             ])
             ->filters([
                 //

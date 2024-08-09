@@ -37,11 +37,15 @@ class SessionSecheduleResource extends Resource
                 TimePicker::make('timeStart'),
                 TimePicker::make('timeEnd'),
                 TextInput::make('room'),
-                Toggle::make('is_published'),
+                Select::make('room_id')
+                    ->relationship('room', 'name')
+                    ->preload(),
                 Select::make('moderator_id')
                     ->relationship('moderator', 'name')
                     ->searchable()
-                    ->preload()
+                    ->preload(),
+                Toggle::make('is_published')->default(true),
+                
             ]);
     }
 
@@ -54,7 +58,8 @@ class SessionSecheduleResource extends Resource
                 TextColumn::make('date')->dateTime('d F Y'),
                 TextColumn::make('timeStart')->sortable(),
                 TextColumn::make('moderator.name')->searchable(),
-                TextColumn::make('room')->searchable(),
+                // TextColumn::make('atglance')->searchable(),
+                TextColumn::make('room.name')
             ])
             ->filters([
                 //

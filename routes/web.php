@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\HomePage;
+use App\Livewire\Pages\Accommodation;
 use App\Livewire\Pages\CardiologyInJeopardy;
 use App\Livewire\Pages\CongressInformation;
 use App\Livewire\Pages\Homecoming;
@@ -44,3 +45,4 @@ Route::get('/registration', Registration::class);
 
 Route::get('/cardiology-in-jeopardy', CardiologyInJeopardy::class);
 Route::get('/homecoming', Homecoming::class);
+Route::get('/accommodation', Accommodation::class);

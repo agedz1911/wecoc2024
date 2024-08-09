@@ -14,10 +14,11 @@ return new class extends Migration
         Schema::create('at_glance_programs', function (Blueprint $table) {
             $table->id();
             $table->string('time')->nullable();
-            $table->string('session')->nullable();
-            $table->text('title')->nullable();
+            $table->string('topic')->nullable();
+            $table->string('speaker')->nullable();
             $table->string('notes')->nullable();
-            $table->foreignId('date_id')->constrained('date_programs')->cascadeOnDelete();
+            $table->string('desc')->nullable();
+            $table->foreignId('session_id')->constrained('schedule_sessions')->cascadeOnDelete();
             $table->foreignId('room_id')->constrained('room_programs')->cascadeOnDelete();
             $table->timestamps();
         });

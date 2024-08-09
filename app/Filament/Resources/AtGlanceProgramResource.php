@@ -29,18 +29,18 @@ class AtGlanceProgramResource extends Resource
     {
         return $form
             ->schema([
-                Select::make('date_id')
-                    ->native(false)
+                Select::make('session_id')
                     ->preload()
-                    ->options(DateProgram::all()->pluck('date', 'id')),
+                    ->relationship('session', 'session'),
                 Select::make('room_id')
                     ->native(false)
                     ->preload()
                     ->relationship('roomProgram', 'name'),
                 TextInput::make('time'),
-                TextInput::make('session'),
-                Textarea::make('title'),
-                TextInput::make('notes')
+                TextInput::make('topic'),
+                TextInput::make('speaker'),
+                Textarea::make('notes'),
+                TextInput::make('desc')
             ]);
     }
     public static function table(Table $table): Table
@@ -48,8 +48,6 @@ class AtGlanceProgramResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('roomProgram.name'),
-                TextColumn::make('dateProgram.date')
-                    ->dateTime('d M Y'),
                 TextColumn::make('time'),
                 TextColumn::make('session'),
                 TextColumn::make('title'),

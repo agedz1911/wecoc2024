@@ -13,8 +13,8 @@ class AtGlance extends Component
     public function render()
     {
         $atglances = ModelsAtGlance::all();
-        $programs = DateProgram::all();
-        $rooms = RoomProgram::all();
-        return view('livewire.resources.at-glance', ['atglances' => $atglances, 'programs' => $programs, 'rooms' => $rooms]);
+        // $programs = DateProgram::all();
+        // $rooms = RoomProgram::all();
+        return view('livewire.resources.at-glance', ['atglances' => $atglances]);
     }
 }
