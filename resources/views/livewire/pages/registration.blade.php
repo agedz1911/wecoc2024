@@ -32,11 +32,9 @@
                         <p>Rp. 2.000.000</p>
                     </div>
                     <div class="card-actions justify-end">
-                        <a href="https://expo.virconex-id.com/registration/wecoc2024/" class="btn btn-primary">Register
+                        <a href="https://expo.virconex-id.com/registration/wecoc2024" class="btn btn-primary">Register
                         </a>
-                        {{-- <a href="https://expo.virconex-id.com/registration/wecoc2024/"
-                            class="btn btn-primary">Register </a>
-                        --}}
+                        
                     </div>
                 </div>
             </div>
@@ -70,7 +68,7 @@
                         <p>Rp. 1.500.000</p>
                     </div>
                     <div class="card-actions justify-end">
-                        <a href="https://expo.virconex-id.com/registration/wecoc2024/" class="btn btn-primary">Register
+                        <a href="https://expo.virconex-id.com/registration/wecoc2024" class="btn btn-primary">Register
                         </a>
                     </div>
                 </div>
@@ -107,7 +105,7 @@
 
                     </div>
                     <div class="card-actions justify-end">
-                        <a href="https://expo.virconex-id.com/registration/wecoc2024/" class="btn btn-primary">Register
+                        <a href="https://expo.virconex-id.com/registration/wecoc2024" class="btn btn-primary">Register
                         </a>
                     </div>
                 </div>
@@ -142,7 +140,7 @@
 
                     </div>
                     <div class="card-actions justify-end">
-                        <a href="https://expo.virconex-id.com/registration/wecoc2024/" class="btn btn-primary">Register
+                        <a href="https://expo.virconex-id.com/registration/wecoc2024" class="btn btn-primary">Register
                         </a>
 
                     </div>
@@ -174,9 +172,8 @@
                                 <div class="border my-2 border-primary-600"></div>
                                 <p><i class="fa-regular fa-circle-xmark mr-3"></i>Non Hands on workshop</p>
                                 <div class="card-actions justify-end">
-                                    {{-- <a href="https://expo.virconex-id.com/registration/wecoc2024/"
-                                        class="btn btn-primary">Register </a> --}}
-                                    <a href="https://expo.virconex-id.com/registration/wecoc2024/"
+                                    
+                                    <a href="https://expo.virconex-id.com/registration/wecoc2024"
                                         class="btn btn-primary">Register </a>
 
                                 </div>
@@ -192,7 +189,7 @@
                                 <div class="border my-2 border-primary-600"></div>
                                 <p><i class="fa-regular fa-circle-xmark mr-3"></i>Non Hands on workshop</p>
                                 <div class="card-actions justify-end">
-                                    <a href="https://expo.virconex-id.com/registration/wecoc2024/"
+                                    <a href="https://expo.virconex-id.com/registration/wecoc2024"
                                         class="btn btn-primary">Register </a>
 
                                 </div>
@@ -208,7 +205,7 @@
                                 <div class="border my-2 border-primary-600"></div>
                                 <p><i class="fa-regular fa-circle-xmark mr-3"></i>Non Hands on workshop</p>
                                 <div class="card-actions justify-end">
-                                    <a href="https://expo.virconex-id.com/registration/wecoc2024/"
+                                    <a href="https://expo.virconex-id.com/registration/wecoc2024"
                                         class="btn btn-primary">Register </a>
 
                                 </div>
@@ -223,7 +220,7 @@
                                 <div class="border my-2 border-primary-600"></div>
                                 <p><i class="fa-regular fa-circle-xmark mr-3"></i>Non Hands on workshop</p>
                                 <div class="card-actions justify-end">
-                                    <a href="https://expo.virconex-id.com/registration/wecoc2024/"
+                                    <a href="https://expo.virconex-id.com/registration/wecoc2024"
                                         class="btn btn-primary">Register </a>
 
                                 </div>
@@ -244,9 +241,8 @@
                                 <div class="border my-2 border-primary-600"></div>
                                 <p><i class="fa-regular fa-circle-xmark mr-3"></i>Non Hands on workshop</p>
                                 <div class="card-actions justify-end">
-                                    {{-- <a href="https://expo.virconex-id.com/registration/wecoc2024/"
-                                        class="btn btn-primary">Register </a> --}}
-                                    <a href="https://expo.virconex-id.com/registration/wecoc2024/"
+                                    
+                                    <a href="https://expo.virconex-id.com/registration/wecoc2024"
                                         class="btn btn-primary">Register </a>
 
                                 </div>
@@ -262,7 +258,7 @@
                                 <div class="border my-2 border-primary-600"></div>
                                 <p><i class="fa-regular fa-circle-check mr-3"></i>Hands on workshop</p>
                                 <div class="card-actions justify-end">
-                                    <a href="https://expo.virconex-id.com/registration/wecoc2024/"
+                                    <a href="https://expo.virconex-id.com/registration/wecoc2024"
                                         class="btn btn-primary">Register </a>
 
                                 </div>
@@ -278,7 +274,7 @@
                                 <div class="border my-2 border-primary-600"></div>
                                 <p><i class="fa-regular fa-circle-check mr-3"></i>Hands on workshop</p>
                                 <div class="card-actions justify-end">
-                                    <a href="https://expo.virconex-id.com/registration/wecoc2024/"
+                                    <a href="https://expo.virconex-id.com/registration/wecoc2024"
                                         class="btn btn-primary">Register </a>
 
                                 </div>
@@ -294,7 +290,7 @@
                                 <div class="border my-2 border-primary-600"></div>
                                 <p><i class="fa-regular fa-circle-check mr-3"></i>Hands on workshop</p>
                                 <div class="card-actions justify-end">
-                                    <a href="https://expo.virconex-id.com/registration/wecoc2024/"
+                                    <a href="https://expo.virconex-id.com/registration/wecoc2024"
                                         class="btn btn-primary">Register </a>
 
                                 </div>
@@ -311,7 +307,7 @@
                                 <div class="border my-2 border-primary-600"></div>
                                 <p><i class="fa-regular fa-circle-check mr-3"></i>Hands on workshop</p>
                                 <div class="card-actions justify-end">
-                                    <a href="https://expo.virconex-id.com/registration/wecoc2024/"
+                                    <a href="https://expo.virconex-id.com/registration/wecoc2024"
                                         class="btn btn-primary">Register </a>
 
                                 </div>

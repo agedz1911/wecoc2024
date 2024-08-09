@@ -1,4 +1,7 @@
 <div>
+    @foreach ($sessions->where('date', '2024-10-25') as $item)
+        {{$item->room}}
+    @endforeach
     @if (count($sesis) > 0)
         <div class="flex items-center justify-center">
             <div x-data="{ openTab: 1 }" class="lg:w-3/4 w-full mx-auto">
@@ -17,8 +20,10 @@
 
                     <div x-show="openTab === 1"
                         class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-primary">
-                        @foreach ($sesis->where('date', '2024-10-26') as $sesi)
+                        @foreach ($sesis->where('date', '2024-10-25') as $sesi)
                             <div class="overflow-x-auto">
+                                
+
                                 <table class="table">
                                     <thead>
                                         <tr class="text-base font-semibold mb-2 text-primary-800 ">
@@ -38,7 +43,7 @@
                                             <td>Speaker</td>
                                             <td>Country</td>
                                         </tr>
-                                        @foreach ($sesi->schedule as $schedule)
+                                        {{-- @foreach ($sesi->schedule as $schedule)
                                             <tr>
                                                 <th>{{ \Carbon\Carbon::parse($schedule->timeStart)->format('H.i') }} -
                                                     {{ \Carbon\Carbon::parse($schedule->timeEnd)->format('H.i') }}</th>
@@ -46,7 +51,7 @@
                                                 <td>{{ $schedule->faculty->name }}</td>
                                                 <td>{{ $schedule->faculty->country }}</td>
                                             </tr>
-                                        @endforeach
+                                        @endforeach --}}
                                     </tbody>
                                 </table>
                             </div>
@@ -56,7 +61,7 @@
 
                     <div x-show="openTab === 2"
                         class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-primary">
-                        @foreach ($sesis->where('date', '2024-10-27') as $sesi)
+                        @foreach ($sesis->where('date', '2024-10-26') as $sesi)
                             <div class="overflow-x-auto">
                                 <table class="table">
                                     <thead>
@@ -78,7 +83,7 @@
                                             <td>Speaker</td>
                                             <td>Country</td>
                                         </tr>
-                                        @foreach ($sesi->schedule as $schedule)
+                                        {{-- @foreach ($sesi->schedule as $schedule)
                                             <tr>
                                                 <th>{{ \Carbon\Carbon::parse($schedule->timeStart)->format('H.i') }} -
                                                     {{ \Carbon\Carbon::parse($schedule->timeEnd)->format('H.i') }}</th>
@@ -86,7 +91,7 @@
                                                 <td>{{ $schedule->faculty->name }}</td>
                                                 <td>{{ $schedule->faculty->country }}</td>
                                             </tr>
-                                        @endforeach
+                                        @endforeach --}}
                                     </tbody>
                                 </table>
                             </div>
@@ -117,7 +122,7 @@
                                             <td>Speaker</td>
                                             <td>Country</td>
                                         </tr>
-                                        @foreach ($sesi->schedule as $schedule)
+                                        {{-- @foreach ($sesi->schedule as $schedule)
                                             <tr>
                                                 <th>{{ \Carbon\Carbon::parse($schedule->timeStart)->format('H.i') }} -
                                                     {{ \Carbon\Carbon::parse($schedule->timeEnd)->format('H.i') }}</th>
@@ -125,7 +130,7 @@
                                                 <td>{{ $schedule->faculty->name }}</td>
                                                 <td>{{ $schedule->faculty->country }}</td>
                                             </tr>
-                                        @endforeach
+                                        @endforeach --}}
                                     </tbody>
                                 </table>
                             </div>

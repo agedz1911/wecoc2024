@@ -18,6 +18,7 @@ class ScheduleSession extends Model
         'timeEnd',
         'room',
         'moderator_id',
+        'room_id',
         'is_published'
     ];
 
@@ -29,5 +30,15 @@ class ScheduleSession extends Model
     public function schedule(): HasMany
     {
         return $this->hasMany(ScientificSchedule::class, 'session_id', 'id');
+    }
+
+    public function room(): BelongsTo
+    {
+        return $this->belongsTo(RoomProgram::class);
+    }
+
+    public function atglance(): HasMany
+    {
+        return $this->hasMany(AtGlanceProgram::class,);
     }
 }
