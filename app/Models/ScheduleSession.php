@@ -19,7 +19,8 @@ class ScheduleSession extends Model
         'room',
         'moderator_id',
         'room_id',
-        'is_published'
+        'is_published',
+        'moderator'
     ];
 
     public function moderator(): BelongsTo
@@ -39,6 +40,6 @@ class ScheduleSession extends Model
 
     public function atglance(): HasMany
     {
-        return $this->hasMany(AtGlanceProgram::class,);
+        return $this->hasMany(AtGlanceProgram::class, 'session_id', 'id');
     }
 }

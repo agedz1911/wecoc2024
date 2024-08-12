@@ -14,8 +14,8 @@ class Schedule extends Component
         {
             // $schedules = ScientificSchedule::all();
             // return view('livewire.resources.schedule', [ 'schedules' => $schedules]);
-            $sesis = AtGlanceProgram::all();
-            $sessions = ScheduleSession::all();
+            $sessions = AtGlanceProgram::all();
+            $sesis = ScheduleSession::all();
             $rooms = RoomProgram::all();
             return view('livewire.resources.schedule', [ 'sesis' => $sesis, 'rooms' => $rooms, 'sessions' => $sessions]);
         }

@@ -40,10 +40,7 @@ class SessionSecheduleResource extends Resource
                 Select::make('room_id')
                     ->relationship('room', 'name')
                     ->preload(),
-                Select::make('moderator_id')
-                    ->relationship('moderator', 'name')
-                    ->searchable()
-                    ->preload(),
+                TextInput::make('moderator'),
                 Toggle::make('is_published')->default(true),
                 
             ]);
@@ -57,8 +54,8 @@ class SessionSecheduleResource extends Resource
                 TextColumn::make('session')->searchable(),
                 TextColumn::make('date')->dateTime('d F Y'),
                 TextColumn::make('timeStart')->sortable(),
-                TextColumn::make('moderator.name')->searchable(),
-                // TextColumn::make('atglance')->searchable(),
+                TextColumn::make('moderator')->searchable(),
+                TextColumn::make('atglance')->searchable(),
                 TextColumn::make('room.name')
             ])
             ->filters([

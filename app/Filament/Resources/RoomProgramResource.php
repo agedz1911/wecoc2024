@@ -30,6 +30,7 @@ class RoomProgramResource extends Resource
         return $form
             ->schema([
                 TextInput::make('name'),
+                TextInput::make('sesi'),
                 Toggle::make('is_active')->default(true)
             ]);
     }
@@ -39,8 +40,9 @@ class RoomProgramResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('name'),
+                TextColumn::make('sesi'),
                 IconColumn::make('is_active')->boolean(),
-                TextColumn::make('atglance'),
+                TextColumn::make('atglance.'),
                 TextColumn::make('session'),
             ])
             ->filters([

@@ -13,7 +13,8 @@ class RoomProgram extends Model
 
     protected $fillable = [
         'name',
-        'is_active'
+        'is_active',
+        'sesi'
     ];
 
     public function atglance(): HasMany

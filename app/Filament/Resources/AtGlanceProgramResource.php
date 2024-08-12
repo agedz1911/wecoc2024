@@ -47,10 +47,10 @@ class AtGlanceProgramResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('roomProgram.name'),
-                TextColumn::make('time'),
-                TextColumn::make('session'),
-                TextColumn::make('title'),
+                TextColumn::make('time')->sortable(),
+                TextColumn::make('roomProgram.name')->searchable()->sortable(),
+                TextColumn::make('session.session'),
+                TextColumn::make('topic'),
             ])
             ->filters([
                 //

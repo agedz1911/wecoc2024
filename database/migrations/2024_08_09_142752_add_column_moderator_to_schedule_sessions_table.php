@@ -12,8 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('schedule_sessions', function (Blueprint $table) {
-            $table->unsignedBigInteger('moderator_id')->after('room')->nullable();
-            $table->foreign('moderator_id')->references('id')->on('faculties');
+            $table->string('moderator')->nullable();
         });
     }
 
@@ -23,8 +22,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('schedule_sessions', function (Blueprint $table) {
-            $table->dropColumn('moderator_id');
-            $table->dropForeign(['moderator_id']);
+            $table->dropColumn('moderator');
         });
     }
 };

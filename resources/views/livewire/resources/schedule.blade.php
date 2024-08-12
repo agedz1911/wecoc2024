@@ -1,151 +1,161 @@
 <div>
-    @foreach ($sessions->where('date', '2024-10-25') as $item)
-        {{$item->room}}
-    @endforeach
-    @if (count($sesis) > 0)
-        <div class="flex items-center justify-center">
-            <div x-data="{ openTab: 1 }" class="lg:w-3/4 w-full mx-auto">
-                <div class="">
-                    <div class="mb-4 flex space-x-4 p-2 bg-white rounded-lg shadow-md">
-                        <button x-on:click="openTab = 1" :class="{ 'bg-primary-600 text-white': openTab === 1 }"
-                            class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">25
-                            October</button>
-                        <button x-on:click="openTab = 2" :class="{ 'bg-primary-600 text-white': openTab === 2 }"
-                            class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">26
-                            October</button>
-                        {{-- <button x-on:click="openTab = 3" :class="{ 'bg-primary-600 text-white': openTab === 3 }"
+    @if (count($rooms) > 0)
+    <div class="flex items-center justify-center">
+        <div x-data="{ openTab: 1 }" class=" w-full mx-auto">
+            <div class="">
+                <div class="mb-4 flex space-x-4 p-2 bg-white rounded-lg shadow-md">
+                    <button x-on:click="openTab = 1" :class="{ 'bg-primary-600 text-white': openTab === 1 }"
+                        class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">25
+                        October</button>
+                    <button x-on:click="openTab = 2" :class="{ 'bg-primary-600 text-white': openTab === 2 }"
+                        class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">26
+                        October</button>
+                    {{-- <button x-on:click="openTab = 3" :class="{ 'bg-primary-600 text-white': openTab === 3 }"
                         class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">28
                         October</button> --}}
+                </div>
+
+                <div x-show="openTab === 1"
+                    class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-primary">
+                    <div class="overflow-x-auto ">
+                        <table class="table">
+                            <thead class="text-base font-semibold  text-primary-800 ">
+                                <tr>
+                                    @foreach ($rooms as $room)
+                                    @if ($room->sesi == 'Symposium')
+                                    <th class="text-center">{{ $room->name }}</th>
+                                    @endif
+                                    @endforeach
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    @foreach ($rooms as $room)
+                                    <td>
+                                        @foreach ($room->session as $session)
+                                        @if ($session->date == '2024-10-25')
+                                        <div class="card card-compact w-full shadow-md mb-1">
+                                            <div class="card-body">
+                                                <p class="font-semibold">
+                                                    {{\Carbon\Carbon::parse($session->timeStart)->format('H.i') }} -
+                                                    {{\Carbon\Carbon::parse($session->timeEnd)->format('H.i')}}
+                                                </p>
+                                                <h2 class="card-title text-primary-700">{{ $session->session }}</h2>
+                                                @if ($session->session != 'Coffee Break')
+                                                    
+                                                <p class="text-base font-bold">Moderator: {{$session->moderator}}</p>
+                                                <div class="">
+                                                    <table class="table table-zebra ">
+                                                        <tr>
+                                                            <th class="w-1/12">Time</th>
+                                                            <th>Title</th>
+                                                            <th>Speaker</th>
+                                                        </tr>
+                                                        @foreach ($session->atglance as $atglance)
+                                                        <tr>
+                                                            <td>{{$atglance->time}}</td>
+                                                            <td>
+                                                                {{$atglance->topic}}
+                                                            </td>
+                                                            <td>
+                                                                {{$atglance->speaker}}
+                                                            </td>
+                                                        </tr>
+
+                                                        @endforeach
+                                                    </table>
+                                                </div>
+                                                @endif
+                                            </div>
+                                        </div>
+                                        @endif
+                                        @endforeach
+                                    </td>
+                                    @endforeach
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
 
-                    <div x-show="openTab === 1"
-                        class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-primary">
-                        @foreach ($sesis->where('date', '2024-10-25') as $sesi)
-                            <div class="overflow-x-auto">
-                                
+                </div>
 
-                                <table class="table">
-                                    <thead>
-                                        <tr class="text-base font-semibold mb-2 text-primary-800 ">
-                                            <th class="w-1/12">
-                                                {{ \Carbon\Carbon::parse($sesi->timeStart)->format('H.i') }} -
-                                                {{ \Carbon\Carbon::parse($sesi->timeEnd)->format('H.i') }}</th>
-                                            <th colspan="3">{{ $sesi->session }} <br> Room: {{ $sesi->room }} <br>
-                                                Moderator: {{ $sesi->moderator->name }}
-                                                ({{ $sesi->moderator->country }})
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="bg-base-200">
-                                            <th>Time</th>
-                                            <td>Topic</td>
-                                            <td>Speaker</td>
-                                            <td>Country</td>
-                                        </tr>
-                                        {{-- @foreach ($sesi->schedule as $schedule)
-                                            <tr>
-                                                <th>{{ \Carbon\Carbon::parse($schedule->timeStart)->format('H.i') }} -
-                                                    {{ \Carbon\Carbon::parse($schedule->timeEnd)->format('H.i') }}</th>
-                                                <td>{{ $schedule->topic }}</td>
-                                                <td>{{ $schedule->faculty->name }}</td>
-                                                <td>{{ $schedule->faculty->country }}</td>
-                                            </tr>
-                                        @endforeach --}}
-                                    </tbody>
-                                </table>
-                            </div>
-                        @endforeach
+                <div x-show="openTab === 2"
+                    class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-primary">
+                    <div class="overflow-x-auto ">
+                        <table class="table">
+                            <thead class="text-base font-semibold  text-primary-800 ">
+                                <tr>
+                                    @foreach ($rooms as $room)
+                                    @if ($room->sesi == 'Symposium')
+                                    <th class="text-center">{{ $room->name }}</th>
+                                    @endif
+                                    @endforeach
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    @foreach ($rooms as $room)
+                                    <td>
+                                        @foreach ($room->session as $session)
+                                        @if ($session->date == '2024-10-26')
+                                        <div class="card card-compact bg-base-100 w-full  shadow-md mb-1">
+                                            <div class="card-body">
+                                                <p class="font-semibold">
+                                                    {{\Carbon\Carbon::parse($session->timeStart)->format('H.i') }} -
+                                                    {{\Carbon\Carbon::parse($session->timeEnd)->format('H.i')}}
+                                                </p>
+                                                <h2 class="card-title text-primary-700">{{ $session->session }}</h2>
+                                                @if ($session->session != 'Coffee Break')
+                                                    
+                                                <p class="text-base font-bold">Moderator: {{$session->moderator}}</p>
+                                                <div class="">
+                                                    <table class="table table-zebra ">
+                                                        <tr>
+                                                            <th class="w-1/12">Time</th>
+                                                            <th>Title</th>
+                                                            <th>Speaker</th>
+                                                        </tr>
+                                                        @foreach ($session->atglance as $atglance)
+                                                        <tr>
+                                                            <td>{{$atglance->time}}</td>
+                                                            <td>
+                                                                {{$atglance->topic}}
+                                                            </td>
+                                                            <td>
+                                                                {{$atglance->speaker}}
+                                                            </td>
+                                                        </tr>
 
+                                                        @endforeach
+                                                    </table>
+                                                </div>
+                                                @endif
+                                            </div>
+                                        </div>
+                                        @endif
+                                        @endforeach
+                                    </td>
+                                    @endforeach
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+                </div>
 
-                    <div x-show="openTab === 2"
-                        class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-primary">
-                        @foreach ($sesis->where('date', '2024-10-26') as $sesi)
-                            <div class="overflow-x-auto">
-                                <table class="table">
-                                    <thead>
-                                        <tr class="text-base font-semibold mb-2 text-primary-800">
-                                            <th class="w-1/12">
-                                                {{ \Carbon\Carbon::parse($sesi->timeStart)->format('H.i') }} -
-                                                {{ \Carbon\Carbon::parse($sesi->timeEnd)->format('H.i') }}</th>
-                                            <th colspan="3">{{ $sesi->session }} <br> Room: {{ $sesi->room }}
-                                                <br>
-                                                Moderator: {{ $sesi->moderator->name }}
-                                                ({{ $sesi->moderator->country }})
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="bg-base-200">
-                                            <th>Time</th>
-                                            <td>Topic</td>
-                                            <td>Speaker</td>
-                                            <td>Country</td>
-                                        </tr>
-                                        {{-- @foreach ($sesi->schedule as $schedule)
-                                            <tr>
-                                                <th>{{ \Carbon\Carbon::parse($schedule->timeStart)->format('H.i') }} -
-                                                    {{ \Carbon\Carbon::parse($schedule->timeEnd)->format('H.i') }}</th>
-                                                <td>{{ $schedule->topic }}</td>
-                                                <td>{{ $schedule->faculty->name }}</td>
-                                                <td>{{ $schedule->faculty->country }}</td>
-                                            </tr>
-                                        @endforeach --}}
-                                    </tbody>
-                                </table>
-                            </div>
-                        @endforeach
-                    </div>
-
-                    <div x-show="openTab === 3"
-                        class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-primary">
-                        @foreach ($sesis->where('date', '2024-10-28') as $sesi)
-                            <div class="overflow-x-auto">
-                                <table class="table">
-                                    <thead>
-                                        <tr class="text-base font-semibold mb-2 text-primary-800">
-                                            <th class="w-1/12">
-                                                {{ \Carbon\Carbon::parse($sesi->timeStart)->format('H.i') }} -
-                                                {{ \Carbon\Carbon::parse($sesi->timeEnd)->format('H.i') }}</th>
-                                            <th colspan="3">{{ $sesi->session }} <br> Room: {{ $sesi->room }}
-                                                <br>
-                                                Moderator: {{ $sesi->moderator->name }}
-                                                ({{ $sesi->moderator->country }})
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="bg-base-200">
-                                            <th>Time</th>
-                                            <td>Topic</td>
-                                            <td>Speaker</td>
-                                            <td>Country</td>
-                                        </tr>
-                                        {{-- @foreach ($sesi->schedule as $schedule)
-                                            <tr>
-                                                <th>{{ \Carbon\Carbon::parse($schedule->timeStart)->format('H.i') }} -
-                                                    {{ \Carbon\Carbon::parse($schedule->timeEnd)->format('H.i') }}</th>
-                                                <td>{{ $schedule->topic }}</td>
-                                                <td>{{ $schedule->faculty->name }}</td>
-                                                <td>{{ $schedule->faculty->country }}</td>
-                                            </tr>
-                                        @endforeach --}}
-                                    </tbody>
-                                </table>
-                            </div>
-                        @endforeach
-                    </div>
+                <div x-show="openTab === 3"
+                    class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-primary">
+                    ke tiga
                 </div>
             </div>
         </div>
+    </div>
     @else
-        <div class="h-96">
+    <div class="h-96">
 
-            <div class="flex flex-col items-center justify-center h-full">
-                <h1 class="text-4xl text-gray-400">Coming soon</h1>
-            </div>
+        <div class="flex flex-col items-center justify-center h-full">
+            <h1 class="text-4xl text-gray-400">Coming soon</h1>
         </div>
+    </div>
     @endif
 
 </div>
