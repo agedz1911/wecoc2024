@@ -54,8 +54,8 @@
                                     @endforeach
                                 </table>
                                 @endif
-
                             </div>
+                            <div class="divider"></div>
                             @endif
                             @endforeach
                         </div>
@@ -163,8 +163,8 @@
                                     @endforeach
                                 </table>
                                 @endif
-
                             </div>
+                            <div class="divider"></div>
                             @endif
                             @endforeach
                         </div>

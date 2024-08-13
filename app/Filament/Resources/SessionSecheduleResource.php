@@ -36,7 +36,7 @@ class SessionSecheduleResource extends Resource
                     ->displayFormat('d F Y'),
                 TimePicker::make('timeStart'),
                 TimePicker::make('timeEnd'),
-                TextInput::make('room'),
+                // TextInput::make('room'),
                 Select::make('room_id')
                     ->relationship('room', 'name')
                     ->preload(),
