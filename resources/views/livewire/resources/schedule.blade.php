@@ -17,15 +17,15 @@
 
                 <div x-show="openTab === 1"
                     class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-primary">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 ">
                         @foreach ($rooms as $room)
                         @if ($room->sesi == 'Symposium')
-                        <div class="card card-compact bg-base-100 w-full shadow-xl">
+                        <div class="px-5 rounded-xl bg-base-100 w-full shadow-md">
                             <p class="text-lg font-bold text-center text-primary-600">{{ $room->name }}
                             </p>
                             @foreach ($room->session as $session)
                             @if ($session->date == '2024-10-25')
-                            <div class="card-body">
+                            <div class="">
                                 <p>{{ \Carbon\Carbon::parse($session->timeStart)->format('H.i') }}
                                     -
                                     {{ \Carbon\Carbon::parse($session->timeEnd)->format('H.i') }}
@@ -35,24 +35,26 @@
                                 </h2>
                                 @if ($session->session != 'Coffee Break')
                                 <p class="text-base font-bold">Moderator: {{$session->moderator}}</p>
-                                <table class="table ">
-                                    <tr>
-                                        <th class="w-1/12">Time</th>
-                                        <th>Title</th>
-                                        <th>Speaker</th>
-                                    </tr>
-                                    @foreach ($session->atglance as $atglance)
-                                    <tr class=" even:bg-green-100">
-                                        <td>{{ $atglance->time }}</td>
-                                        <td>
-                                            {{ $atglance->topic }}
-                                        </td>
-                                        <td>
-                                            {{ $atglance->speaker }}
-                                        </td>
-                                    </tr>
-                                    @endforeach
-                                </table>
+                                <div class="overflow-x-auto">
+                                    <table class="table ">
+                                        <tr>
+                                            <th class="w-1/12">Time</th>
+                                            <th>Title</th>
+                                            <th>Speaker</th>
+                                        </tr>
+                                        @foreach ($session->atglance as $atglance)
+                                        <tr class=" even:bg-green-100">
+                                            <td>{{ $atglance->time }}</td>
+                                            <td>
+                                                {{ $atglance->topic }}
+                                            </td>
+                                            <td>
+                                                {{ $atglance->speaker }}
+                                            </td>
+                                        </tr>
+                                        @endforeach
+                                    </table>
+                                </div>
                                 @endif
                             </div>
                             <div class="divider"></div>
@@ -126,15 +128,15 @@
 
                 <div x-show="openTab === 2"
                     class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-primary">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 content-start">
                         @foreach ($rooms as $room)
                         @if ($room->sesi == 'Symposium')
-                        <div class="card card-compact bg-base-100 w-full shadow-xl">
+                        <div class="px-5 rounded-xl bg-base-100 w-full shadow-xl">
                             <p class="text-lg font-bold text-center text-primary-600">{{ $room->name }}
                             </p>
                             @foreach ($room->session as $session)
                             @if ($session->date == '2024-10-26')
-                            <div class="card-body">
+                            <div class="">
                                 <p>{{ \Carbon\Carbon::parse($session->timeStart)->format('H.i') }}
                                     -
                                     {{ \Carbon\Carbon::parse($session->timeEnd)->format('H.i') }}
@@ -144,24 +146,26 @@
                                 </h2>
                                 @if ($session->session != 'Coffee Break')
                                 <p class="text-base font-bold">Moderator: {{$session->moderator}}</p>
-                                <table class="table ">
-                                    <tr>
-                                        <th class="w-1/12">Time</th>
-                                        <th>Title</th>
-                                        <th>Speaker</th>
-                                    </tr>
-                                    @foreach ($session->atglance as $atglance)
-                                    <tr class=" even:bg-green-100">
-                                        <td>{{ $atglance->time }}</td>
-                                        <td>
-                                            {{ $atglance->topic }}
-                                        </td>
-                                        <td>
-                                            {{ $atglance->speaker }}
-                                        </td>
-                                    </tr>
-                                    @endforeach
-                                </table>
+                                <div class="overflow-x-auto">
+                                    <table class="table ">
+                                        <tr>
+                                            <th class="w-1/12">Time</th>
+                                            <th>Title</th>
+                                            <th>Speaker</th>
+                                        </tr>
+                                        @foreach ($session->atglance as $atglance)
+                                        <tr class=" even:bg-green-100">
+                                            <td>{{ $atglance->time }}</td>
+                                            <td>
+                                                {{ $atglance->topic }}
+                                            </td>
+                                            <td>
+                                                {{ $atglance->speaker }}
+                                            </td>
+                                        </tr>
+                                        @endforeach
+                                    </table>
+                                </div>
                                 @endif
                             </div>
                             <div class="divider"></div>

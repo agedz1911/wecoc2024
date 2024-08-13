@@ -49,7 +49,7 @@ class AtGlanceProgramResource extends Resource
             ->columns([
                 TextColumn::make('time')->sortable(),
                 TextColumn::make('roomProgram.name')->searchable()->sortable(),
-                TextColumn::make('session.session'),
+                TextColumn::make('session.session')->searchable()->sortable(),
                 TextColumn::make('topic'),
             ])
             ->filters([
