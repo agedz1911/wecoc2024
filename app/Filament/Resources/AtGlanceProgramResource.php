@@ -21,8 +21,8 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class AtGlanceProgramResource extends Resource
 {
     protected static ?string $model = AtGlanceProgram::class;
-    protected static ?string $navigationGroup = 'Program at glance';
-    protected static ?string $modelLabel = 'Program at glance';
+    protected static ?string $navigationGroup = 'Scientific Schedules';
+    protected static ?string $modelLabel = 'Schedule Update';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form

@@ -21,7 +21,7 @@ class RoomProgramResource extends Resource
 {
     protected static ?string $model = RoomProgram::class;
     
-    protected static ?string $navigationGroup = 'Program at glance';
+    protected static ?string $navigationGroup = 'Settings';
     protected static ?string $modelLabel = 'Room';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 

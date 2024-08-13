@@ -21,7 +21,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class DateProgramResource extends Resource
 {
     protected static ?string $model = DateProgram::class;
-    protected static ?string $navigationGroup = 'Program at glance';
+    protected static ?string $navigationGroup = 'Settings';
     protected static ?string $modelLabel = 'Date';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
