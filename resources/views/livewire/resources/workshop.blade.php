@@ -40,7 +40,7 @@
                                                             <th>Speaker</th>
                                                         </tr>
                                                         @foreach ($session->atglance as $atglance)
-                                                            <tr>
+                                                            <tr class=" even:bg-primary-100">
                                                                 <td>{{ $atglance->time }}</td>
                                                                 <td>
                                                                     {{ $atglance->topic }}
@@ -85,7 +85,7 @@
                                                             <th>Speaker</th>
                                                         </tr>
                                                         @foreach ($session->atglance as $atglance)
-                                                            <tr>
+                                                            <tr class=" even:bg-primary-100">
                                                                 <td>{{ $atglance->time }}</td>
                                                                 <td>
                                                                     {{ $atglance->topic }}
