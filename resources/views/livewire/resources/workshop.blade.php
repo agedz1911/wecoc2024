@@ -33,7 +33,7 @@
                                                         -
                                                         {{ \Carbon\Carbon::parse($session->timeEnd)->format('H.i') }}
                                                     </p>
-                                                    <table class="table table-zebra ">
+                                                    <table class="table ">
                                                         <tr>
                                                             <th class="w-1/12">Time</th>
                                                             <th>Title</th>
@@ -78,7 +78,7 @@
                                                         -
                                                         {{ \Carbon\Carbon::parse($session->timeEnd)->format('H.i') }}
                                                     </p>
-                                                    <table class="table table-zebra ">
+                                                    <table class="table ">
                                                         <tr>
                                                             <th class="w-1/12">Time</th>
                                                             <th>Title</th>
