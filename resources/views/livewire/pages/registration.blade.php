@@ -319,7 +319,7 @@
         </div>
     </div>
 
-    <div class="bg-local pt-24 pb-52 lg:px-20 px-5 bg-blog" id="reg-info">
+<!--     <div class="bg-local pt-24 pb-52 lg:px-20 px-5 bg-blog" id="reg-info">
         <div class="flex-col flex gap-3 mb-10">
             <h4 class="text-2xl text-primary-600 font-semibold">Registration</h4>
             <h1 class="text-4xl text-primary-700 font-semibold">Registration Information</h1>
@@ -327,5 +327,5 @@
 
         <livewire:resources.reg-info />
 
-    </div>
+    </div> -->
 </div>
