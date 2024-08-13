@@ -27,10 +27,8 @@
             <h1 class="text-4xl text-primary-700 font-semibold">Workshop Schedule</h1>
         </div>
 
-        <div class="h-96">
-            <div class="flex flex-col items-center justify-center h-full">
-                <h1 class="text-4xl text-gray-400">Coming soon</h1>
-            </div>
+        <div class="">
+            <livewire:resources.workshop />
         </div>
     </div>
     <div class=" pt-28 pb-52 lg:px-20 px-5 b" id="scientific-corner">

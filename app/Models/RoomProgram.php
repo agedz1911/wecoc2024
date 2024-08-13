@@ -19,7 +19,7 @@ class RoomProgram extends Model
 
     public function atglance(): HasMany
     {
-        return $this->hasMany(AtGlanceProgram::class, 'room_id');
+        return $this->hasMany(AtGlanceProgram::class, 'room_id', 'id');
     }
 
     public function session(): HasMany

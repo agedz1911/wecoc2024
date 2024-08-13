@@ -40,9 +40,13 @@ class SessionSecheduleResource extends Resource
                 Select::make('room_id')
                     ->relationship('room', 'name')
                     ->preload(),
+                // Select::make('mederator_id')
+                // ->searchable()
+                //     ->relationship('moderator', 'name')
+                //     ->preload(),
                 TextInput::make('moderator'),
                 Toggle::make('is_published')->default(true),
-                
+
             ]);
     }
 

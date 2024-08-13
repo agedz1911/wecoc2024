@@ -33,7 +33,7 @@
                                     @foreach ($rooms as $room)
                                     <td>
                                         @foreach ($room->session as $session)
-                                        @if ($session->date == '2024-10-25')
+                                        @if ($session->date == '2024-10-25' && str_contains(strtolower($session->session), 'symposium'))
                                         <div class="card card-compact w-full shadow-md mb-1">
                                             <div class="card-body">
                                                 <p class="font-semibold">
@@ -97,7 +97,7 @@
                                     @foreach ($rooms as $room)
                                     <td>
                                         @foreach ($room->session as $session)
-                                        @if ($session->date == '2024-10-26')
+                                        @if ($session->date == '2024-10-26' && str_contains(strtolower($session->session), 'symposium'))
                                         <div class="card card-compact bg-base-100 w-full  shadow-md mb-1">
                                             <div class="card-body">
                                                 <p class="font-semibold">
