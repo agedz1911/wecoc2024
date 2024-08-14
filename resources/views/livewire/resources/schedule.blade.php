@@ -33,7 +33,7 @@
                                                     <h2 class="card-title text-primary-700">
                                                         {{ $session->session }}
                                                     </h2>
-                                                    @if ($session->session != 'Coffee Break')
+                                                    @if ($session->session != 'Coffee Break' && $session->session != 'Friday Prayer + Lunch' && $session->session != 'OPENING CEREMONY')
                                                         <p class="text-base font-bold">Moderator:
                                                             {{ $session->moderator }}</p>
                                                         <div class="overflow-x-auto">
@@ -148,7 +148,7 @@
                                                     <h2 class="card-title text-primary-700">
                                                         {{ $session->session }}
                                                     </h2>
-                                                    @if ($session->session != 'Coffee Break')
+                                                    @if ($session->session != 'Coffee Break' && $session->session != 'Lunch')
                                                         <p class="text-base font-bold">Moderator:
                                                             {{ $session->moderator }}</p>
                                                         <div class="overflow-x-auto">

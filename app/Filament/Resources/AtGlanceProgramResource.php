@@ -30,6 +30,7 @@ class AtGlanceProgramResource extends Resource
         return $form
             ->schema([
                 Select::make('session_id')
+                    ->searchable()
                     ->preload()
                     ->relationship('session', 'session'),
                 Select::make('room_id')
