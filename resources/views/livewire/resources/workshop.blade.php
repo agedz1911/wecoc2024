@@ -60,10 +60,11 @@
                                                         </table>
                                                     </div>
                                                 </div>
+                                                <div class="divider"></div>
                                             @endif
                                         @endforeach
                                     </div>
-                                    <div class="divider"></div>
+                                    
                                 @endif
                             @endforeach
                         </div>
@@ -113,10 +114,11 @@
                                                         </table>
                                                     </div>
                                                 </div>
+                                                <div class="divider"></div>
                                             @endif
                                         @endforeach
                                     </div>
-                                    <div class="divider"></div>
+                                    
                                 @endif
                             @endforeach
                         </div>
