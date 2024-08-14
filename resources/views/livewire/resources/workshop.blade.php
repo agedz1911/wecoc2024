@@ -21,7 +21,7 @@
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
                             @foreach ($rooms as $room)
                                 @if ($room->sesi == 'Workshop')
-                                    <div class="px-5 rounded-xl bg-base-100 w-full shadow-xl">
+                                    <div class="px-5 rounded-xl bg-base-100 w-full shadow-md">
                                         <p class="text-lg font-bold text-center text-primary-600">{{ $room->name }}
                                         </p>
                                         @foreach ($room->session as $session)
@@ -63,6 +63,7 @@
                                             @endif
                                         @endforeach
                                     </div>
+                                    <div class="divider"></div>
                                 @endif
                             @endforeach
                         </div>
@@ -73,7 +74,7 @@
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
                             @foreach ($rooms as $room)
                                 @if ($room->sesi == 'Workshop')
-                                    <div class="px-5 rounded-xl bg-base-100 w-full shadow-xl">
+                                    <div class="px-5 rounded-xl bg-base-100 w-full shadow-md">
                                         <p class="text-lg font-bold text-center text-primary-600">{{ $room->name }}
                                         </p>
                                         @foreach ($room->session as $session)
@@ -115,6 +116,7 @@
                                             @endif
                                         @endforeach
                                     </div>
+                                    <div class="divider"></div>
                                 @endif
                             @endforeach
                         </div>

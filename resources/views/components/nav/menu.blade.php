@@ -106,7 +106,7 @@
           <a href="mailto:wecoc.eventkardiologi@gmail.com" class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-solid fa-envelope text-gray-600 "></i></a>
           <!-- <a class="btn btn-primary md:hidden sm:inline-block py-4">Login</a> -->
           <!-- Responsive Offcanvas Menu Button -->
-          <div class="block lg:hidden">
+          <div class="block xl:hidden">
             <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
               <span></span>
               <span></span>
