@@ -3,8 +3,18 @@
         <div class="flex-col flex gap-3 mb-10">
             <h1 class="text-4xl text-primary-700 font-semibold">Accommodation</h1>
         </div>
-        <div class="flex flex-col items-center justify-center h-full">
-            <h1 class="text-4xl text-gray-400">Coming soon</h1>
+        <div class="card card-side bg-base-100 shadow-md">
+            <figure>
+                <img src="images/jw-marriot.jpg" alt="Movie" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title">Hotel JW Marriott Jakarta, Kuningan</h2>
+                <p>IDR. <span class="text-primary-700 font-semibold">2.150.000</span></p>
+                <div class="card-actions justify-end">
+                    <a href="https://expo.virconex-id.com/registration/wecoc2024/index.php/auth_peserta"
+                        class="btn btn-primary">Book</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

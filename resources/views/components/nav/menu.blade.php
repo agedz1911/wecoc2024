@@ -2,7 +2,7 @@
   <header class="site-header  bg-slate-50 py-2 px-3" id="sticky-menu">
 
     <div class="container-default">
-      <div class="flex items-center justify-between gap-x-2">
+      <div class="flex flex-row items-center justify-between lg:flex-col 2xl:flex-row gap-x-2">
         <!-- Header Logo -->
         <div class="avatar">
           <a href="/" class="h-14">

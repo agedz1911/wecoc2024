@@ -7,7 +7,7 @@
             @foreach ($committees as $committee)
             @if ($committee->category == $category)
             <div class="">
-                <div class="card w-full md:w-72 bg-base-100 shadow-xl">
+                <div class="card w-full h-96 md:w-72 bg-base-100 shadow-xl">
                     <figure>
                         @if($committee->getMedia('committee')->isEmpty())
                         <div class="avatar w-full md:w-72 px-3">
