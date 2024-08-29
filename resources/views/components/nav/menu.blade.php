@@ -5,7 +5,7 @@
       <div class="flex flex-row items-center justify-between lg:flex-col 2xl:flex-row gap-x-2">
         <!-- Header Logo -->
         <div class="avatar">
-          <a href="/" class="h-14">
+          <a href="/" class="h-fit lg:h-14">
             <img src="images/logo-wecoc.PNG" alt="WECOC" />
           </a>
         </div>

@@ -1,5 +1,6 @@
 <div class="bg-slate-50">
     <div class="bg-local pt-20 pb-52 xl:px-20 px-5 bg-home-coming">
+        
         <div class="flex-col flex gap-3 mb-16">
             <p class="text-xl font-semibold">Alumni Gathering Event
                 <br>Department of Cardiology and Vascular Medicine FKUI/RSJPDHK/RSUI
@@ -74,6 +75,17 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="w-full justify-center md:pt-10">
+            <div class="mockup-window border bg-white">
+                <div class="flex justify-center px-4 py-5 bg-slate-100">
+                    <video class=" rounded-lg" controls muted autoplay loop>
+                        <source src="images/video/homecoming-teaser.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </div>

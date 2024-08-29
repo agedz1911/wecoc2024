@@ -7,11 +7,11 @@
             @foreach ($committees as $committee)
             @if ($committee->category == $category)
             <div class="">
-                <div class="card w-full h-96 md:w-72 bg-base-100 shadow-xl">
+                <div class="card w-full h-[26rem] md:w-72 bg-base-100 shadow-xl">
                     <figure>
                         @if($committee->getMedia('committee')->isEmpty())
                         <div class="avatar w-full md:w-72 px-3">
-                            <div class="rounded-full ring ring-primary  ring-offset-base-100 ring-offset-4">
+                            <div class="rounded-full ring ring-primary ring-offset-base-100 ring-offset-4">
                                 <img src="{{ asset('images/doctor.png') }}" alt="Default Doctor Image"
                                     class="rounded-lg" />
                             </div>
@@ -19,7 +19,7 @@
                         @else
                         @foreach($committee->getMedia('committee') as $image)
                         <div class="avatar w-full md:w-72 px-3">
-                            <div class="rounded-full bg-[#32bea6] ring ring-primary ring-offset-base-100 ring-offset-4">
+                            <div class="rounded-lg bg-[#32bea6] ring ring-primary ring-offset-base-100 ring-offset-2">
                                 <img src="{{ $image->getUrl() }}" alt="{{$committee->name}}" />
                             </div>
                         </div>
