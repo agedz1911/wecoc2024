@@ -10,6 +10,8 @@
             <div class="card-body">
                 <h2 class="card-title">Hotel JW Marriott Jakarta, Kuningan</h2>
                 <p>IDR. <span class="text-primary-700 font-semibold">2.150.000</span></p>
+                <small class="italic text-muted">*For more information on Hotel Accomodation, <br>
+                    please contact WECOC Hotline at <a href="tel:+6285890029355" class="text-primary-700 hover:text-blue-700">+62 858-9002-9355</a></small>
                 <div class="card-actions justify-end">
                     <a href="https://expo.virconex-id.com/registration/wecoc2024/index.php/auth_peserta"
                         class="btn btn-primary">Book</a>
